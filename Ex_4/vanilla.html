@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="directive-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var directiveContainer = document.getElementById('directive-container');
+            var newElement = document.createElement('h1');
+            newElement.textContent = 'Made by a directive!';
+            directiveContainer.appendChild(newElement);
+        });
+    </script>
+</body>
+</html>

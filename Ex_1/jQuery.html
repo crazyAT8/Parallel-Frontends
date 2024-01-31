@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <body>
+
+        <div>
+            <p>Name: <input type="text" id="nameInput"></p>
+            <p id="displayName"></p>
+            <p>Name2: <input type="text" id="name2Input"></p>
+            <p id="display2Name"></p>
+        </div>
+
+        <script>
+            // Wait for the document to be ready
+            $(document).ready(function() {
+                // Input change event for 'name'
+                $("#nameInput").on("input", function() {
+                    var nameValue = $(this).val();
+                    $("#displayName").text("Name: " + nameValue);
+                });
+
+                // Input change event for 'name2'
+                $("#name2Input").on("input", function() {
+                    var name2Value = $(this).val();
+                    $("#display2Name").text("Name2: " + name2Value);
+                });
+            });
+        </script>
+
+        <p>
+            To achieve similar functionality in jQuery, <br>
+            you can use jQuery's event handling and DOM manipulation
+        </p>
+
+        <ol>
+            <li>we include jQuery via a script tag.</li>
+            <li>We use jQuery to select and manipulate DOM elements.</li>
+            <li>We attach event listeners to the input elements to capture changes in their values.</li>
+            <li>Inside the event listeners, we update the content of specific paragraphs to reflect the input values.</li>
+        </ol>
+
+        <p>This code replicates the two-way data binding provided by Angular in the original code but implements it using jQuery's event handling and DOM manipulation capabilities.</p>
+
+    </body>
+</html>

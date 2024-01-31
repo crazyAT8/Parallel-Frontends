@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <w3-test-directive></w3-test-directive>
+    </div>
+      
+    <script>
+        Vue.component('w3-test-directive', {
+            template: '<h1>Made by a directive!</h1>'
+        });
+        
+        new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>

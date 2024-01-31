@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <body>
+
+        <div id="app">
+            <p>Name: <input type="text" v-model="name"></p>
+            <p>{{ name }}</p>
+            <p>Name2: <input type="text" v-model="name2"></p>
+            <p>{{ name2 }}</p>
+        </div>
+
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    name: '',
+                    name2: ''
+                }
+            });
+        </script>
+
+        <p>To achieve similar functionality in Vue.js, you can use Vue's data binding and directives.</p>
+
+        <ol>
+            <li>We include Vue.js via a script tag.</li>
+            <li>We create a Vue instance and bind it to the '#app' element using 'el'.</li>
+            <li>We define data properties 'name' and 'name2' un the Vue instance's 'data'.</li>
+            <li>We use the 'v-model' directive for two-way data binding between the input elements and the data properties.</li>
+            <li>We display the values of 'name' and 'nasme2' using '{{ }}' interpolation.</li>
+        </ol>
+
+        <p>This code replicates the two-way data binding behavior provided by Angular in the original code but implements it using Vue.js directives and data binding.</p>
+
+    </body>
+</html>

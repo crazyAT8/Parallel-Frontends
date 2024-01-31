@@ -1,0 +1,11 @@
+Example 1
+    This is a very simple 
+        enter something into the text box input and
+            have it appear just below the input
+            right as you type it 
+
+
+Example 3
+    reads the color that is 
+        typed into the input and 
+            the input changes to that color

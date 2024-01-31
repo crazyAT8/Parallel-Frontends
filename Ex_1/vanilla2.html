@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div>
+            <p>Name: <input type="text" id="nameInput"></p>
+            <p id="displayName"></p>
+            <p>Name2: <input type="text" id="name2Input"></p>
+            <p id="display2Name"></p>
+        </div>
+
+        <script>
+            // Get references to the input elements and display paragraphs
+            const nameInput = document.getElementById("nameInput");
+            const displayName = document.getElementById("displayName");
+            const name2Input = document.getElementById("name2Input");
+            const display2Name = document.getElementById("display2Name");
+
+            // Add event listeners to input elements
+            nameInput.addEventListener("input", function() {
+                displayName.textContent = nameInput.value;
+            });
+
+            name2Input.addEventListener("input", function() {
+                display2Name.textContent = name2Input.value;
+            });
+        </script>
+
+        <p>To achieve similar functionality in vanilla JavaScript without Angular, you can use event listeners and DOM manipulation. </p>
+
+        <ol>
+            <li>We use getElementById to get references to the input elements and display paragraphs.</li>
+            <li>We add event listeners to the input elements to capture changes in their values.</li>
+            <li>Inside the event listeners, we update the content of the display paragraphs to reflect the input values.</li>
+        </ol>
+
+        <p>This code mimics the two-way data binding behavior provided by Angular in the original code but does so using plain JavaScript.</p>
+
+    </body>
+</html>

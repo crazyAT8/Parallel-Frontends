@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div>
+            <p>Input something in the input box:</p>
+            <p>Name1: <input type="text" id="name1Input"></p>
+            <p id="name1Display"></p>
+          
+            <p>Input something in the input box:</p>
+            <p>Name2: <input type="text" id="name2Input"></p>
+            <p id="name2Display"></p>
+        </div>
+          
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              function bindInputToElement(inputId, displayId) {
+                var input = document.getElementById(inputId);
+                var display = document.getElementById(displayId);
+          
+                input.addEventListener('input', function() {
+                  display.textContent = input.value;
+                });
+              }
+          
+              bindInputToElement('name1Input', 'name1Display');
+              bindInputToElement('name2Input', 'name2Display');
+            });
+        </script>
+
+
+    </body>
+</html>

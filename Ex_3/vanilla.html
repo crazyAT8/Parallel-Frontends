@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Change the value of the input field:</p>
+
+    <div>
+        <input id="colorInput" style="background-color: lightblue" placeholder="lightblue">
+    </div>
+
+    <p>The background color of the input box will be whatever you write in the input field.</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var input = document.getElementById('colorInput');
+
+            input.addEventListener('input', function () {
+                input.style.backgroundColor = input.value;
+            });
+        });
+    </script>
+
+</body>
+</html>

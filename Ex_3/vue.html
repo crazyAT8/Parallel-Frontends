@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <p>Change the value of the input field:</p>
+        <input v-model="myCol" :style="{ 'background-color': myCol }">
+
+        <p>The background color of the input box will be whatever you write in the input field.</p>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                myCol: 'lightblue'
+            }
+        });
+    </script>
+
+</body>
+</html>
